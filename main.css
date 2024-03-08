@@ -1,0 +1,96 @@
+.bodyy {
+    font-family: 'Babylonica', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #6cb097;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.hidden { display: none; }
+
+.player-text {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+.maintitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: rgb(8, 8, 12);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+
+}
+
+#board {
+    height: 540px;
+    width: 630px;
+    background-color: rgb(153, 255, 248);
+    border: 10px solid rgb(234, 232, 232);
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile:hover {
+    background-color:rgb(183, 183, 183);
+}
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 5px solid rgba(155, 155, 155, 0.982);
+}
+
+.greenpiece {
+    
+    background-color: rgb(5, 244, 72);
+}
+
+.orangepiece {
+    background-color: rgb(234, 154, 57);
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.maintitle, #board {
+    animation: zoomIn 1s ease-in-out;
+}
+
+
